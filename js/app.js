@@ -88,7 +88,6 @@ function filmLister(flms) {
 function reqFilms() {
   const filmsObj = JSON.parse(this.responseText);
   const films = filmsObj.results;
-  // console.log(filmsObj);
 
   filmLister(films);
 }
